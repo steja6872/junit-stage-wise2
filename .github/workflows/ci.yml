@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Run Only AppTest1
-        run: mvn -Dtest=AppTest1 test
+        run: mvn test
 
       - name: Generate Surefire HTML Report
         run: mvn surefire-report:report
@@ -47,7 +47,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Run Only AppTest2
-        run: mvn -Dtest=AppTest2 test
+        run: mvn test
 
       - name: Generate Surefire HTML Report
         run: mvn surefire-report:report
@@ -73,7 +73,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Run Only AppTest3
-        run: mvn -Dtest=AppTest3 test
+        run: mvn test
 
       - name: Generate Surefire HTML Report
         run: mvn surefire-report:report
