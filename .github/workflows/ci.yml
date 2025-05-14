@@ -27,7 +27,7 @@ jobs:
         run: mvn surefire-report:report
 
       - name: Upload Surefire Report for Test1
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: surefire-report-test1
           path: target/site/
@@ -53,7 +53,7 @@ jobs:
         run: mvn surefire-report:report
 
       - name: Upload Surefire Report for Test2
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: surefire-report-test2
           path: target/site/
@@ -79,7 +79,7 @@ jobs:
         run: mvn surefire-report:report
 
       - name: Upload Surefire Report for Test3
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: surefire-report-test3
           path: target/site/
